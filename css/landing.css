@@ -86,7 +86,7 @@
 .policy-item {
   margin-top: 40px;
 
-  background-image: url(/images/policy-img.png);
+  background: url(../images/policy-img.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
