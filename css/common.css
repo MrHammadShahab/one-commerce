@@ -60,6 +60,10 @@
   color: #4bd963;
 }
 
+.selected-item {
+  color: #4bd963 !important;
+}
+
 .header__search,
 .header__likes,
 .header__cart,
