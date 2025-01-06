@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/landing.css" />
+    <link rel="stylesheet" href="./css/collection.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+      /* ANIMATION START */
+
+      @keyframes appear {
+        from {
+          opacity: 0;
+          scale: 0.5;
+        }
+        to {
+          opacity: 1;
+          scale: 1;
+        }
+      }
+
+      .hero-sec,
+      .collection-sec__info,
+      .collection-sec button,
+      .explore-sec__list {
+        animation: appear 0.3s linear;
+      }
+
+      .tags-sec,
+      .benefit-sec,
+      .explore-sec {
+        animation: appear linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
+      }
+
+      /* ANIMATION END */
+    </style>
+
+    <title>COLLECTIONS</title>
+  </head>
+
+  <body>
+    <!-- HEADER START  -->
+
+    <div class="header">
+      <div>
+        <a href="./">
+          <span
+            ><img
+              class="header__logo"
+              src="./images/logo.avif"
+              alt="logo"
+            /> </span
+        ></a>
+      </div>
+
+      <div class="header__menus">
+        <a href="/">Home</a>
+        <a href="/collection.html">Collections</a>
+        <a href="/product.html">Products</a>
+        <a href="/about.html">About Us</a>
+        <a href="/blog.html">Blogs</a>
+      </div>
+
+      <div class="header__icons">
+        <img
+          class="header__search"
+          src="./images/icons/search.png"
+          alt="search icon"
+        />
+        <img
+          class="header__likes"
+          src="./images/icons/heart.png"
+          alt="likes icon"
+        />
+        <img
+          class="header__cart"
+          src="./images/icons/cart.png"
+          alt="cart icon"
+        />
+        <img
+          class="header__settings"
+          src="./images/icons/settings.png"
+          alt="settings icon"
+        />
+      </div>
+      <img
+        class="header__menu-icon"
+        src="./images/icons/app-drawer.png"
+        alt="menu-icon"
+      />
+    </div>
+
+    <!-- HEADER END  -->
+
+    <div class="hero-sec">
+      <h2>COLLECTIONS</h2>
+      <p>
+        <span><a href="/">Home</a></span
+        >• Collection
+      </p>
+    </div>
+
+    <!-- EXPLORE SECTION START -->
+    <div class="collection-sec">
+      <div class="collection-sec__info">
+        <img src="./images/icons/settings.png" alt="settings" />
+        <h2>Filter</h2>
+        <img
+          class="collection-sec-img"
+          src="./images/icons/down.png"
+          alt="down"
+        />
+        <p>Showing 24 of 50 products</p>
+      </div>
+      <button>
+        <span
+          ><img src="./images/icons/cart1.png" alt="deleted" />Clear All</span
+        >
+      </button>
+      <div class="explore-sec__list collection-sec-border">
+        <!-- ---1--- -->
+        <div class="explore-sec__list-item">
+          <img
+            class="explore-sec__list-img"
+            src="./images/explore-img-1.webp"
+            alt="explore1.pmg"
+          />
+          <p class="explore-sec__list-text">
+            10000 mAh Power Bank with Wireless Charging and Integrated Cables
+          </p>
+          <img
+            class="explore-sec__list-star"
+            src="./images/icons/heart.png"
+            alt="star.png"
+          />
+          <p class="explore-sec__list-price">$20.00</p>
+        </div>
+
+        <!-- ---2--- -->
+
+        <div class="explore-sec__list-item">
+          <img
+            class="explore-sec__list-img"
+            src="./images/explore-img-1.webp"
+            alt="explore1.pmg"
+          />
+          <p class="explore-sec__list-text">
+            10000 mAh Power Bank with Wireless Charging and Integrated Cables
+          </p>
+          <img
+            class="explore-sec__list-star"
+            src="./images/icons/heart.png"
+            alt="star.png"
+          />
+          <p class="explore-sec__list-price">$20.00</p>
+        </div>
+
+        <!-- ---2--- -->
+
+        <div class="explore-sec__list-item">
+          <img
+            class="explore-sec__list-img"
+            src="./images/explore-img-1.webp"
+            alt="explore1.pmg"
+          />
+          <p class="explore-sec__list-text">
+            10000 mAh Power Bank with Wireless Charging and Integrated Cables
+          </p>
+          <img
+            class="explore-sec__list-star"
+            src="./images/icons/heart.png"
+            alt="star.png"
+          />
+          <p class="explore-sec__list-price">$20.00</p>
+        </div>
+
+        <!-- ---3--- -->
+
+        <div class="explore-sec__list-item">
+          <img
+            class="explore-sec__list-img"
+            src="./images/explore-img-1.webp"
+            alt="explore1.pmg"
+          />
+          <p class="explore-sec__list-text">
+            10000 mAh Power Bank with Wireless Charging and Integrated Cables
+          </p>
+          <img
+            class="explore-sec__list-star"
+            src="./images/icons/heart.png"
+            alt="star.png"
+          />
+          <p class="explore-sec__list-price">$20.00</p>
+        </div>
+
+        <!-- ---4--- -->
+
+        <div class="explore-sec__list-item">
+          <img
+            class="explore-sec__list-img"
+            src="./images/explore-img-1.webp"
+            alt="explore1.pmg"
+          />
+          <p class="explore-sec__list-text">
+            10000 mAh Power Bank with Wireless Charging and Integrated Cables
+          </p>
+          <img
+            class="explore-sec__list-star"
+            src="./images/icons/heart.png"
+            alt="star.png"
+          />
+          <p class="explore-sec__list-price">$20.00</p>
+        </div>
+
+        <!-- ---2--- -->
+
+        <div class="explore-sec__list-item">
+          <img
+            class="explore-sec__list-img"
+            src="./images/explore-img-1.webp"
+            alt="explore1.pmg"
+          />
+          <p class="explore-sec__list-text">
+            10000 mAh Power Bank with Wireless Charging and Integrated Cables
+          </p>
+          <img
+            class="explore-sec__list-star"
+            src="./images/icons/heart.png"
+            alt="star.png"
+          />
+          <p class="explore-sec__list-price">$20.00</p>
+        </div>
+
+        <!-- ---2--- -->
+
+        <div class="explore-sec__list-item">
+          <img
+            class="explore-sec__list-img"
+            src="./images/explore-img-1.webp"
+            alt="explore1.pmg"
+          />
+          <p class="explore-sec__list-text">
+            10000 mAh Power Bank with Wireless Charging and Integrated Cables
+          </p>
+          <img
+            class="explore-sec__list-star"
+            src="./images/icons/heart.png"
+            alt="star.png"
+          />
+          <p class="explore-sec__list-price">$20.00</p>
+        </div>
+
+        <!-- ---3--- -->
+
+        <div class="explore-sec__list-item">
+          <img
+            class="explore-sec__list-img"
+            src="./images/explore-img-1.webp"
+            alt="explore1.pmg"
+          />
+          <p class="explore-sec__list-text">
+            10000 mAh Power Bank with Wireless Charging and Integrated Cables
+          </p>
+          <img
+            class="explore-sec__list-star"
+            src="./images/icons/heart.png"
+            alt="star.png"
+          />
+          <p class="explore-sec__list-price">$20.00</p>
+        </div>
+
+        <!-- ---4--- -->
+
+        <div class="explore-sec__list-item">
+          <img
+            class="explore-sec__list-img"
+            src="./images/explore-img-1.webp"
+            alt="explore1.pmg"
+          />
+          <p class="explore-sec__list-text">
+            10000 mAh Power Bank with Wireless Charging and Integrated Cables
+          </p>
+          <img
+            class="explore-sec__list-star"
+            src="./images/icons/heart.png"
+            alt="star.png"
+          />
+          <p class="explore-sec__list-price">$20.00</p>
+        </div>
+
+        <!-- ---2--- -->
+
+        <div class="explore-sec__list-item">
+          <img
+            class="explore-sec__list-img"
+            src="./images/explore-img-1.webp"
+            alt="explore1.pmg"
+          />
+          <p class="explore-sec__list-text">
+            10000 mAh Power Bank with Wireless Charging and Integrated Cables
+          </p>
+          <img
+            class="explore-sec__list-star"
+            src="./images/icons/heart.png"
+            alt="star.png"
+          />
+          <p class="explore-sec__list-price">$20.00</p>
+        </div>
+
+        <!-- ---2--- -->
+
+        <div class="explore-sec__list-item">
+          <img
+            class="explore-sec__list-img"
+            src="./images/explore-img-1.webp"
+            alt="explore1.pmg"
+          />
+          <p class="explore-sec__list-text">
+            10000 mAh Power Bank with Wireless Charging and Integrated Cables
+          </p>
+          <img
+            class="explore-sec__list-star"
+            src="./images/icons/heart.png"
+            alt="star.png"
+          />
+          <p class="explore-sec__list-price">$20.00</p>
+        </div>
+
+        <!-- ---3--- -->
+
+        <div class="explore-sec__list-item">
+          <img
+            class="explore-sec__list-img"
+            src="./images/explore-img-1.webp"
+            alt="explore1.pmg"
+          />
+          <p class="explore-sec__list-text">
+            10000 mAh Power Bank with Wireless Charging and Integrated Cables
+          </p>
+          <img
+            class="explore-sec__list-star"
+            src="./images/icons/heart.png"
+            alt="star.png"
+          />
+          <p class="explore-sec__list-price">$20.00</p>
+        </div>
+
+        <!-- ---4--- -->
+      </div>
+
+      <div class="collection-sec_more">
+        <p>Showing 12 of 50 products</p>
+        <img src="./images/icons/bar.png" alt="bar" />
+        <button>Load More</button>
+      </div>
+    </div>
+    <!-- EXPLORE SECTION END -->
+
+    <!-- TAGS SECTION START -->
+
+    <div class="tags-sec">
+      <div class="tags-sec__buttons">
+        <h4>
+          <span><img src="./images/icons/tag.png" alt="tag" /></span>TAGS
+        </h4>
+        <!-- -- -->
+        <button>Air Purifier</button>
+        <button>Apple</button>
+        <button>Audio</button>
+        <button>Bass</button>
+        <button>Battery</button>
+        <button>Bluetooth</button>
+        <button>Charger</button>
+        <button>Drone</button>
+        <button>Electronics</button>
+        <button>Headphones</button>
+        <button>Iron</button>
+        <button>Micro</button>
+        <button>OPPO</button>
+        <button>Power</button>
+        <button>Refrigerator</button>
+        <button>Samsung</button>
+        <button>Smart</button>
+        <button>Smartphone</button>
+        <button>Smartwatch</button>
+        <button>Treble</button>
+        <button>Vaccum</button>
+        <button>Watches</button>
+        <button>Wirelss</button>
+        <button>Xiaomi</button>
+      </div>
+      <div class="tags-sec__text">
+        <h4>Game devices</h4>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu ipsum
+          eu quam blandit maximus. Donec at lacus lacus. Donec ultricies lacus
+          libero, fermentum mollis velit accumsan ac. Morbi in nunc erat. Sed a
+          ligula tristique mi aliquam pellentesque. Ut malesuada nisl eros, ut
+          sollicitudin ex mattis quis. Praesent cursus a augue ac placerat. Nam
+          mattis mi ac dui suscipit egestas. Vestibulum lorem libero, feugiat
+          dapibus urna id, gravida varius tellus. Nam sed congue quam. Sed sit
+          amet libero augue. Class aptent taciti sociosqu ad litora torquent per
+          conubia nostra, per inceptos himenaeos. Nam et efficitur ante.
+          Vestibulum quis volutpat felis, volutpat ornare nunc.
+        </p>
+      </div>
+    </div>
+
+    <!-- TAGS SECTION END -->
+
+    <!-- BENEFITS SECTION START -->
+    <div class="benefit-sec">
+      <div class="benefit-sec__item">
+        <div class="benefit-sec__item-left">
+          <div class="benefit-sec__circle">
+            <img src="./images/icons/shipment2.webp" alt="shipment" />
+          </div>
+        </div>
+        <div class="benefit-sec__text">
+          <h4>FREE US DELIVERY</h4>
+          <p>Free shipping on all order above $200</p>
+        </div>
+      </div>
+
+      <div class="benefit-sec__item">
+        <div class="benefit-sec__item-left">
+          <div class="benefit-sec__circle">
+            <img src="./images/icons/quality.webp" alt="shipment" />
+          </div>
+        </div>
+        <div class="benefit-sec__text">
+          <h4>FREE US DELIVERY</h4>
+          <p>Free shipping on all order above $200</p>
+        </div>
+      </div>
+
+      <div class="benefit-sec__item">
+        <div class="benefit-sec__item-left">
+          <div class="benefit-sec__circle">
+            <img src="./images/icons/shield2.webp" alt="shipment" />
+          </div>
+        </div>
+        <div class="benefit-sec__text">
+          <h4>FREE US DELIVERY</h4>
+          <p>Free shipping on all order above $200</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- BENEFITS SECTION END -->
+
+    <!-- EXPLORE SECTION START -->
+    <div class="explore-sec recent-sec">
+      <h2>Recently Viewed</h2>
+      <div class="explore-sec__list">
+        <!-- ---1--- -->
+        <div class="explore-sec__list-item">
+          <img
+            class="explore-sec__list-img"
+            src="./images/explore-img-1.webp"
+            alt="explore1.pmg"
+          />
+          <p class="explore-sec__list-text">
+            10000 mAh Power Bank with Wireless Charging and Integrated Cables
+          </p>
+          <img
+            class="explore-sec__list-star"
+            src="./images/icons/heart.png"
+            alt="star.png"
+          />
+          <p class="explore-sec__list-price">$20.00</p>
+        </div>
+
+        <!-- ---2--- -->
+
+        <div class="explore-sec__list-item">
+          <img
+            class="explore-sec__list-img"
+            src="./images/recent-img-1.webp"
+            alt="explore1.pmg"
+          />
+          <p class="explore-sec__list-text">
+            10000 mAh Power Bank with Wireless Charging and Integrated Cables
+          </p>
+          <img
+            class="explore-sec__list-star"
+            src="./images/icons/heart.png"
+            alt="star.png"
+          />
+          <p class="explore-sec__list-price">$20.00</p>
+        </div>
+      </div>
+    </div>
+    <!-- EXPLORE SECTION END -->
+
+    <!-- ------------- -->
+    <!-- ------------- -->
+    <!-- ------------- -->
+    <!-- ------------- -->
+    <!-- ------------- -->
+    <!-- ------------- -->
+
+    <!-- ------------- -->
+    <!-- ------------- -->
+    <!-- ------------- -->
+    <!-- ------------- -->
+    <!-- ------------- -->
+    <!-- ------------- -->
+    <!-- ------------- -->
+
+    <!-- FOOTER SECTION START -->
+    <div class="footer-sec">
+      <!-- ---contact--- -->
+      <div class="footer-sec__contact">
+        <div class="footer-sec__contact-logo">
+          <img src="./images/logo-white.webp" alt="logo" />
+          <div class="footer-sec__contact-logo-text">
+            <h6>One</h6>
+            <p>Single product shopify theme</p>
+          </div>
+        </div>
+        <div class="footer-sec__contact-info">
+          <img src="./images/icons/call.png" alt="phone" />
+          <p class="footer-sec__contact-text">Call Us Now :</p>
+
+          <p class="footer-sec__contact-link">0123 456 789</p>
+        </div>
+
+        <div class="footer-sec__contact-info">
+          <img src="./images/icons/email.png" alt="phone" />
+
+          <p class="footer-sec__contact-link">demo@gmail.com</p>
+        </div>
+
+        <div class="footer-sec__contact-info">
+          <img src="./images/icons/pin.png" alt="phone" />
+          <p class="footer-sec__contact-text">Monday till Friday 10 to 6 EST</p>
+        </div>
+      </div>
+
+      <!-- ---about--- -->
+      <div class="footer-sec__about">
+        <h4>About</h4>
+
+        <div class="footer-about__a">
+          <a href="#">About</a>
+          <a href="#">Blog</a>
+          <a href="#">Partner</a>
+          <a href="#">Delivery and payment</a>
+          <a href="#">Terms of Sale</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+
+      <!-- ---social--- -->
+
+      <div class="footer-sec__social">
+        <h4>Socials</h4>
+
+        <div class="footer-social__a">
+          <a href="#">
+            <span><img src="./images/icons/facebook.png" alt="fb" /></span>
+            Facebook</a
+          >
+          <a href="#">
+            <span><img src="./images/icons/instagram.png" alt="fb" /></span>
+
+            Instagram</a
+          >
+          <a href="#">
+            <span><img src="./images/icons/pinterest.png" alt="fb" /></span>
+            Pinterest</a
+          >
+          <a href="#">
+            <span><img src="./images/icons/twitter.png" alt="fb" /></span>
+            Twitter</a
+          >
+          <a href="#">
+            <span><img src="./images/icons/tiktok.png" alt="fb" /></span>
+            Tiktok</a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- FOOTER SECTION END -->
+
+    <!--LOWER FOOTER START -->
+    <div class="lower-footer">
+      <p>Copyright © 2024 Vinovathemes. All rights reserved.</p>
+      <div class="lower-footer__cards">
+        <img src="./images/icons/american-express.png" alt="american-express" />
+        <img src="./images/icons/master.png" alt="master" />
+        <img src="./images/icons/apple-pay.png" alt="apple-pay" />
+        <img src="./images/icons/master.png" alt="master" />
+        <img src="./images/icons/visa.png" alt="visa" />
+        <img src="./images/icons/master.png" alt="master" />
+      </div>
+    </div>
+    <!--LOWER FOOTER END -->
+  </body>
+</html>
+
+<!-- <img class="hero-section__img" 
+ src="images/image_1.webp" alt="Cover Photo" /> -->

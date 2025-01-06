@@ -1,0 +1,201 @@
+/* ------------------- */
+/*  HERO SECTION START */
+/* ------------------- */
+
+.about-sec {
+  width: calc(100% - 10%);
+  margin-top: 90px;
+  padding: 0px 5%;
+  height: 280px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-sec h2 {
+  text-transform: uppercase;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.hero-sec p {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.hero-sec p span a {
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #000;
+  margin-right: 5px;
+}
+
+/* ----------------- */
+/*  HERO SECTION END */
+/* ----------------- */
+
+/* ---------------------------- */
+/*  ABOUT SEC DESCRIPTION START */
+/* ---------------------------- */
+
+.about-sec__desc {
+  width: calc(100% - 22%);
+  padding: 0px 11%;
+  height: max-content;
+  margin-bottom: 60px;
+}
+
+.about-sec__desc img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  margin-bottom: 40px;
+}
+
+.para-bold {
+  font-weight: 700;
+}
+
+.about-sec__desc p {
+  line-height: 1.7;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+/* -------------------------- */
+/*  ABOUT SEC DESCRIPTION END */
+/* -------------------------- */
+
+/* ------------------ */
+/*  ABOUT QUOTE START */
+/* ------------------ */
+
+.about-quote-sec {
+  width: calc(100% - 22%);
+  margin: 0px 11%;
+  height: calc(300px - 8%);
+
+  background: #f1f1f1;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-quote-sec__img {
+  /* width: calc(25% - 8%);
+  padding: 0px 4%; */
+
+  width: 30%;
+
+  height: 250px;
+  margin-left: 20px;
+}
+
+.about-quote-sec__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.about-quote-sec__text {
+  padding: 50px 0px;
+  height: 200px;
+  display: flex;
+}
+
+.about-quote-sec__text img {
+  width: 40px;
+  height: 40px;
+  margin-top: 10px;
+}
+
+.about-quote-sec__para {
+  margin: 0px 50px;
+}
+
+.quote-para {
+  font-size: 25px;
+  line-height: 1.7;
+}
+
+.quote-name {
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+/* ---------------- */
+/*  ABOUT QUOTE END */
+/* ---------------- */
+
+/* ----------------- */
+/*  ABOUT LIST START */
+/* ----------------- */
+
+.about-sec__list {
+  margin-top: 50px;
+  width: calc(100% - 22%);
+  padding: 0px 11%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-sec__list-item {
+  display: flex;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.about-sec__list-item-text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-sec__list-item-text h4 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.about-sec__list-item-text p {
+  font-size: 20px;
+  line-height: 1.7;
+}
+
+.about-sec__list-item-img {
+  width: 50%;
+  height: 600px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.about-sec__list-item-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: all 0.5s;
+}
+
+/* --------------- */
+/*  ABOUT LIST END */
+/* --------------- */
+
+/* ----------- */
+/* MEDIA QUERY */
+/* ----------- */
+
+/* -----900------- */
+
+@media screen and (max-width: 900px) {
+  .about-quote-sec {
+    display: none;
+  }
+}

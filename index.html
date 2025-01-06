@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/landing.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/product.css" />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+      /* ANIMATION START */
+
+      @keyframes appear {
+        from {
+          opacity: 0;
+          scale: 0.5;
+        }
+        to {
+          opacity: 1;
+          scale: 1;
+        }
+      }
+
+      .hero-section,
+      .policy-item {
+        animation: appear 0.3s linear;
+      }
+
+      .item-features,
+      .item-prev-sec,
+      .prod-sec,
+      .review-sec,
+      .subscribe-sec,
+      .explore-sec,
+      .faq-sec {
+        animation: appear linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
+      }
+
+      /* ANIMATION END */
+    </style>
+
+    <title>HOME</title>
+  </head>
+
+  <body>
+    <!-- HEADER START  -->
+
+    <div class="header">
+      <div class="header__imgs">
+        <a href="./">
+          <span
+            ><img
+              class="header__logo"
+              src="./images/logo.avif"
+              alt="logo"
+            /> </span
+        ></a>
+      </div>
+
+      <div class="header__menus">
+        <a href="/">Home</a>
+        <a href="/collection.html">Collections</a>
+        <a href="/product.html">Products</a>
+        <a href="/about.html">About Us</a>
+        <a href="/blog.html">Blogs</a>
+      </div>
+
+      <div class="header__icons">
+        <img
+          class="header__search"
+          src="./images/icons/search.png"
+          alt="search icon"
+        />
+        <img
+          class="header__likes"
+          src="./images/icons/heart.png"
+          alt="likes icon"
+        />
+        <img
+          class="header__cart"
+          src="./images/icons/cart.png"
+          alt="cart icon"
+        />
+        <img
+          class="header__settings"
+          src="./images/icons/settings.png"
+          alt="settings icon"
+        />
+      </div>
+      <img
+        class="header__menu-icon"
+        src="./images/icons/app-drawer.png"
+        alt="menu-icon"
+      />
+    </div>
+
+    <!-- HEADER END  -->
+
+    <!-- HERO START -->
+
+    <div class="hero-section">
+      <div class="hero-section__content">
+        <p class="text-highlight">4 in 1 Magnetic + Wireless</p>
+        <h1 class="content__title">Wireless Charger Ultra Nano 3-in-1</h1>
+
+        <!-- <div class="hero-section__links"> -->
+        <p>
+          <a class="hero-section__link" href="#"
+            >Watch video
+            <span> <img src="./images/icons/play.png" alt="" /> </span>
+          </a>
+
+          <a href="/product.html">
+            <button class="content__btn">Shop Now</button>
+          </a>
+        </p>
+        <!-- </div> -->
+      </div>
+    </div>
+
+    <!-- HERO END -->
+
+    <!-- POLICY START -->
+    <div class="policy-item">
+      <p class="policy-item__text">CHARGE DOCK FOR APPLE WATCH + IPHONE</p>
+      <h2 class="policy-item__heading">Fast Charge, Safety and Fashion</h2>
+      <div class="policy-item__list">
+        <div class="policy-item-1">
+          <div class="policy-item__list-circle">
+            <img src="./images/icons/battery.png" alt="battery.png" />
+          </div>
+          <h4 class="policy-item__list-text">Keep Phone Battery Safety</h4>
+        </div>
+
+        <div class="policy-item-1">
+          <div class="policy-item__list-circle">
+            <img src="./images/icons/shield.png" alt="shield.png" />
+          </div>
+          <h4 class="policy-item__list-text">Radiation Shielding</h4>
+        </div>
+
+        <div class="policy-item-1">
+          <div class="policy-item__list-circle">
+            <img src="./images/icons/target.webp" alt="target.png" />
+          </div>
+          <h4 class="policy-item__list-text">Foreign Object Detection</h4>
+        </div>
+
+        <div class="policy-item-1">
+          <div class="policy-item__list-circle">
+            <img src="./images/icons/flask.png" alt="flask.png" />
+          </div>
+          <h4 class="policy-item__list-text">Temperature Control</h4>
+        </div>
+      </div>
+    </div>
+    <!-- POLICY END -->
+
+    <!-- ITEM FEATURES -->
+
+    <div class="item-features">
+      <div class="item-features__list-1">
+        <div class="item-features__list-text text-right">
+          <h1>Dual Large Coil Design</h1>
+          <p>
+            Significantly increase the charging speed, Support charging
+            horizontally and vertically
+          </p>
+        </div>
+        <div class="item-features__list-img img-right">
+          <img src="./images/img-1-1.webp" alt="image1" />
+        </div>
+      </div>
+
+      <div class="item-features__list-2">
+        <div class="item-features__list-img img-left">
+          <img src="./images/img-1-2.webp" alt="image2" />
+        </div>
+
+        <div class="item-features__list-text text-left">
+          <h1>Support Smart Watch Wireless Charging</h1>
+          <p>
+            The USB port on the side can be installed with USB watch wireless
+            charging module. Used to charge smartwatches
+          </p>
+        </div>
+      </div>
+
+      <div class="item-features__list-3">
+        <div class="item-features__list-text text-right">
+          <h1>Smart Chip</h1>
+          <p>Fast charging, Not hot</p>
+        </div>
+
+        <div class="item-features__list-img img-right">
+          <img src="/images/img-1-3.webp" alt="image3" />
+        </div>
+      </div>
+
+      <div class="item-features__list-4 text-left">
+        <div class="item-features__list-img img-left">
+          <img src="./images/img-1-4.webp" alt="image4" />
+        </div>
+
+        <div class="item-features__list-text">
+          <h1>PC + ABS Material</h1>
+          <p>Skin Friendly Surface</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ITEM FEATURES END -->
+
+    <!-- ITEM PREVIEW START -->
+
+    <div class="item-prev-sec">
+      <div class="item-prev-sec__img">
+        <img src="./images/item-prev-1.webp" alt="item1" />
+        <img src="./images/item-prev-2.webp" alt="item2" />
+        <img src="./images/item-prev-3.webp" alt="item3" />
+      </div>
+    </div>
+
+    <!-- ITEM PREVIEW END -->
+
+    <!-- ------------- -->
+
+    <!-- ORDER PREVIEW START -->
+
+    <div class="prod-hero-sec order-sec">
+      <p></p>
+    </div>
+    <div class="prod-sec">
+      <div class="prod-sec__img">
+        <img
+          class="prod-sec__img-main"
+          src="./images/product-1.webp"
+          alt="prodiew image"
+        />
+        <div class="prod-sec__img-thumbnail">
+          <img src="./images/product-1.webp" alt="preview-img" />
+          <img src="./images/product-2.webp" alt="preview-img" />
+          <img src="./images/product-3.avif" alt="preview-img" />
+          <img src="./images/product-4.avif" alt="preview-img" />
+          <img src="./images/product-5.avif" alt="preview-img" />
+        </div>
+      </div>
+
+      <div class="prod-sec__text">
+        <h1>Realme Buds Q2s Bluetooth</h1>
+        <a href="./product.html">
+          <span><img src="./images/icons/heart.png" alt="" /></span>
+          <span><img src="./images/icons/heart.png" alt="" /></span>
+          <span><img src="./images/icons/heart.png" alt="" /></span>
+          <span><img src="./images/icons/heart.png" alt="" /></span>
+          <span><img src="./images/icons/heart.png" alt="" /></span>
+          <span><p>View all reviews</p></span>
+        </a>
+        <h3>$125.00</h3>
+        <p class="prod-sec__desc">
+          Captivate with this shirt’s versatile urban look that works as well at
+          happy hour as it does in the back yard. The real mother of pearl
+          buttons and embroidered crocodile complete its elegant appeal.Lorem
+          ipsum...
+        </p>
+        <!-- <p class="prod-sec__btn-desc">Color: White</p>
+    <button class="black-btn"></button>
+    <button class="white-btn"></button> -->
+
+        <div class="prod-sec__details">
+          <div class="details__sec">
+            <div class="details__heading">
+              <h4>TAGS</h4>
+            </div>
+            <div class="details__tags">
+              <a href="">Bass</a>
+              <a href="">Bluetooth</a>
+              <a href="">Power</a>
+              <a href="">Treble</a>
+            </div>
+          </div>
+
+          <div class="details__sec">
+            <div class="details__heading">
+              <h4>SKU</h4>
+            </div>
+            <div class="details__tags">
+              <a href="">e-125</a>
+            </div>
+          </div>
+
+          <div class="details__sec">
+            <div class="details__heading">
+              <h4>CATEGORY</h4>
+            </div>
+            <div class="details__tags">
+              <a href="">Galaxy lamp</a>
+              <a href="">Game deivce</a>
+              <a href="">Laptops</a>
+              <a href="">Smart watch</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="prod__thumbnail">
+          <p class="prod-sec__title">Color: Palegreen</p>
+          <div class="prod__thumbnail-img">
+            <img src="./images/prod-thumbnail-1.webp" alt="product-1" />
+            <img src="./images/prod-thumbnail-2.webp" alt="product-2" />
+            <img src="./images/prod-thumbnail-3.webp" alt="product-3" />
+          </div>
+        </div>
+
+        <p class="prod-sec__title">Quantity:</p>
+        <div class="prod-sec__wish-list">
+          <div class="prod-quantity--btn">
+            <button>-</button>
+            <p>1</p>
+            <button>+</button>
+          </div>
+
+          <button class="cart__btn">Add to Cart</button>
+
+          <button class="wish__btn">
+            <span><img src="./images/icons/heart.png" alt="heart" /></span>
+          </button>
+        </div>
+
+        <button class="prod__btn">Buy it Now</button>
+
+        <p class="prod-sec__notes">
+          <span><img src="./images/icons/time.png" alt="time.png" /></span>
+          Orders ship within 5 to 10 business days.
+        </p>
+        <p class="prod-sec__notes">
+          <span><img src="./images/icons/shipment.png" alt="order.png" /></span>
+          Hooray ! This item ships free to the US
+        </p>
+      </div>
+    </div>
+
+    <!-- ORDER PREVIEW END -->
+
+    <!-- ------------- -->
+
+    <!-- REVIEW SECTION START -->
+
+    <div class="review-sec">
+      <div class="review-sec__text">
+        <p>PRODUCT'S REVIEWS</p>
+        <h1>Trusted By More Than 1000+ Customers.</h1>
+      </div>
+
+      <div class="review-sec__list">
+        <div class="review-sec__rating">
+          <div class="review-sec__rating-stats">
+            <p>Average customer rating</p>
+            <h4>4.8 out of 5</h4>
+            <img src="./images/icons/heart.png" alt="stars" />
+            <p>200 Customers reviewed</p>
+          </div>
+
+          <div class="review-sec__rating-stats__details">
+            <div class="review-sec__rating-stats__details-1">
+              <p>5</p>
+              <img
+                class="rating-star"
+                src="./images/icons/heart.png"
+                alt="star"
+              />
+              <img
+                class="rating-bar"
+                src="./images/icons/bar.png"
+                alt="bar.png"
+              />
+              <p>130 reviews</p>
+            </div>
+
+            <div class="review-sec__rating-stats__details-1">
+              <p>4</p>
+              <img
+                class="rating-star"
+                src="./images/icons/heart.png"
+                alt="star"
+              />
+              <img
+                class="rating-bar"
+                src="./images/icons/bar.png"
+                alt="bar.png"
+              />
+              <p>40 reviews</p>
+            </div>
+
+            <div class="review-sec__rating-stats__details-1">
+              <p>3</p>
+              <img
+                class="rating-star"
+                src="./images/icons/heart.png"
+                alt="star"
+              />
+              <img
+                class="rating-bar"
+                src="./images/icons/bar.png"
+                alt="bar.png"
+              />
+              <p>30 reviews</p>
+            </div>
+
+            <div class="review-sec__rating-stats__details-1">
+              <p>2</p>
+              <img
+                class="rating-star"
+                src="./images/icons/heart.png"
+                alt="star"
+              />
+              <img
+                class="rating-bar"
+                src="./images/icons/bar.png"
+                alt="bar.png"
+              />
+              <p>20 reviews</p>
+            </div>
+
+            <div class="review-sec__rating-stats__details-1">
+              <p>1</p>
+              <img
+                class="rating-star"
+                src="./images/icons/heart.png"
+                alt="star"
+              />
+              <img
+                class="rating-bar"
+                src="./images/icons/bar.png"
+                alt="bar.png"
+              />
+              <p>10 reviews</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- _----------_ -->
+
+        <div class="review-sec__reviews">
+          <!-- ---1--- -->
+          <div class="review-sec__reviews-list">
+            <img
+              class="review-sec__reviews-list__star"
+              src="./images/icons/heart.png"
+              alt="star"
+            />
+            <p class="review-desc">
+              “After I started learning design with Quillow, I realized that I
+              had improved to very advanced levels. While I am studying at my
+              university, I design as an additional income and I am sure that I
+              will do this professionally.”
+            </p>
+
+            <p class="review-desc-name">Jessica</p>
+            <div class="review-desc-verify">
+              <img src="./images/icons/tick.png" alt="check.png" />
+              <p>Verified Purchase</p>
+            </div>
+
+            <div class="review-desc-images">
+              <img src="./images/review-img-1.avif" alt="image-1" />
+              <img src="./images/review-img-2.avif" alt="image-2" />
+            </div>
+          </div>
+
+          <!-- ---2--- -->
+
+          <div class="review-sec__reviews-list">
+            <img
+              class="review-sec__reviews-list__star"
+              src="./images/icons/heart.png"
+              alt="star"
+            />
+            <p class="review-desc">
+              “After I started learning design with Quillow, I realized that I
+              had improved to very advanced levels.”
+            </p>
+
+            <p class="review-desc-name">Ethan</p>
+            <div class="review-desc-verify">
+              <img src="./images/icons/tick.png" alt="check.png" />
+              <p>Verified Purchase</p>
+            </div>
+
+            <div class="review-desc-images">
+              <img src="./images/review-img-1.avif" alt="image-1" />
+              <img src="./images/review-img-2.avif" alt="image-2" />
+            </div>
+          </div>
+
+          <!-- ---3--- -->
+
+          <div class="review-sec__reviews-list">
+            <img
+              class="review-sec__reviews-list__star"
+              src="./images/icons/heart.png"
+              alt="star"
+            />
+            <p class="review-desc">
+              “After I started learning design with Quillow, I realized that I
+              had improved to very advanced levels. While I am studying at my
+              university, I design as an additional income and I am sure that I
+              will do this professionally.”
+            </p>
+
+            <p class="review-desc-name">Ava</p>
+            <div class="review-desc-verify">
+              <img src="./images/icons/tick.png" alt="check.png" />
+              <p>Verified Purchase</p>
+            </div>
+
+            <div class="review-desc-images">
+              <img src="./images/review-img-1.avif" alt="image-1" />
+              <img src="./images/review-img-2.avif" alt="image-2" />
+            </div>
+          </div>
+
+          <!-- ---4--- -->
+
+          <div class="review-sec__reviews-list">
+            <img
+              class="review-sec__reviews-list__star"
+              src="./images/icons/heart.png"
+              alt="star"
+            />
+            <p class="review-desc">
+              “After I started learning design with Quillow, I realized that I
+              had improved to very advanced levels”
+            </p>
+
+            <p class="review-desc-name">Sophia</p>
+            <div class="review-desc-verify">
+              <img src="./images/icons/tick.png" alt="check.png" />
+              <p>Verified Purchase</p>
+            </div>
+
+            <div class="review-desc-images">
+              <img src="./images/review-img-1.avif" alt="image-1" />
+              <img src="./images/review-img-2.avif" alt="image-2" />
+            </div>
+          </div>
+
+          <!-- ---5--- -->
+
+          <div class="review-sec__reviews-list">
+            <img
+              class="review-sec__reviews-list__star"
+              src="./images/icons/heart.png"
+              alt="star"
+            />
+            <p class="review-desc">
+              “After I started learning design with Quillow, I realized that I
+              had improved to very advanced levels. While I am studying at my
+              university, I design as an additional income and I am sure that I
+              will do this professionally.”
+            </p>
+
+            <p class="review-desc-name">Liam</p>
+            <div class="review-desc-verify">
+              <img src="./images/icons/tick.png" alt="check.png" />
+              <p>Verified Purchase</p>
+            </div>
+
+            <div class="review-desc-images">
+              <img src="./images/review-img-1.avif" alt="image-1" />
+              <img src="./images/review-img-2.avif" alt="image-2" />
+            </div>
+          </div>
+
+          <!-- ---6--- -->
+
+          <div class="review-sec__reviews-list">
+            <img
+              class="review-sec__reviews-list__star"
+              src="./images/icons/heart.png"
+              alt="star"
+            />
+            <p class="review-desc">
+              “After I started learning design with Quillow, I realized that I
+              had improved to very advanced levels. While I am studying at my
+              university”
+            </p>
+
+            <p class="review-desc-name">Olivia</p>
+            <div class="review-desc-verify">
+              <img src="./images/icons/tick.png" alt="check.png" />
+              <p>Verified Purchase</p>
+            </div>
+
+            <div class="review-desc-images">
+              <img src="./images/review-img-1.avif" alt="image-1" />
+              <img src="./images/review-img-2.avif" alt="image-2" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- REVIEW SECTION END -->
+
+    <!-- SUBSCRIBE SECTION START -->
+
+    <div class="subscribe-sec">
+      <p>Stay Connect</p>
+      <h2>Subscribe To Get 20$</h2>
+      <input type="email" placeholder="Enter your email..." />
+    </div>
+
+    <!-- SUBSCRIBE SECTION END -->
+
+    <!-- EXPLORE SECTION START -->
+    <div class="explore-sec">
+      <h2>You May Also Like</h2>
+      <div class="explore-sec__list">
+        <!-- ---1--- -->
+        <div class="explore-sec__list-item explore-item1">
+          <img
+            class="explore-sec__list-img"
+            src="./images/explore-img-1.webp"
+            alt="explore1.pmg"
+          />
+          <p class="explore-sec__list-text">
+            10000 mAh Power Bank with Wireless Charging and Integrated Cables
+          </p>
+          <img
+            class="explore-sec__list-star"
+            src="./images/icons/heart.png"
+            alt="star.png"
+          />
+          <p class="explore-sec__list-price">$20.00</p>
+        </div>
+
+        <!-- ---2--- -->
+
+        <div class="explore-sec__list-item explore-item2">
+          <img
+            class="explore-sec__list-img"
+            src="./images/explore-img-1.webp"
+            alt="explore1.pmg"
+          />
+          <p class="explore-sec__list-text">
+            10000 mAh Power Bank with Wireless Charging and Integrated Cables
+          </p>
+          <img
+            class="explore-sec__list-star"
+            src="./images/icons/heart.png"
+            alt="star.png"
+          />
+          <p class="explore-sec__list-price">$20.00</p>
+        </div>
+
+        <!-- ---3--- -->
+
+        <div class="explore-sec__list-item explore-item3">
+          <img
+            class="explore-sec__list-img"
+            src="./images/explore-img-1.webp"
+            alt="explore1.pmg"
+          />
+          <p class="explore-sec__list-text">
+            10000 mAh Power Bank with Wireless Charging and Integrated Cables
+          </p>
+          <img
+            class="explore-sec__list-star"
+            src="./images/icons/heart.png"
+            alt="star.png"
+          />
+          <p class="explore-sec__list-price">$20.00</p>
+        </div>
+
+        <!-- ---4--- -->
+
+        <div class="explore-sec__list-item explore-item4">
+          <img
+            class="explore-sec__list-img"
+            src="./images/explore-img-1.webp"
+            alt="explore1.pmg"
+          />
+          <p class="explore-sec__list-text">
+            10000 mAh Power Bank with Wireless Charging and Integrated Cables
+          </p>
+          <img
+            class="explore-sec__list-star"
+            src="./images/icons/heart.png"
+            alt="star.png"
+          />
+          <p class="explore-sec__list-price">$20.00</p>
+        </div>
+      </div>
+    </div>
+    <!-- EXPLORE SECTION END -->
+
+    <!-- FAQ SECTION START -->
+
+    <div class="faq-sec">
+      <h2>Frequently Asked Questions</h2>
+      <p class="faq-sec__link">
+        Watch video <span><img src="./images/icons/play.png" alt="" /></span>
+      </p>
+
+      <!-- ---1--- -->
+
+      <div class="faq-sec__ans1">
+        <div class="faq-sec__ans1-text">
+          <p class="faq-sec__quest">
+            Product guide
+            <span> <img src="./images/icons/up.png" alt="up" /> </span>
+          </p>
+          <p class="faq-sec__ans1-desc">
+            In elementum neque arcu, id vehicula nibh rhoncus at. Morbi interdum
+            massa quis mauris placerat ullamcorper. Integer enim nunc, egestas
+            auctor dapibus vel, aliquam et sem. Maecenas consectetur pharetra
+            lacus vitae bibendum. Curabitur imperdiet felis vitae orci
+            vestibulum scelerisque. Aenean nec urna aliquet nisl scelerisque
+            accumsan ac posuere diam.
+          </p>
+        </div>
+      </div>
+
+      <!-- ---2--- -->
+
+      <div class="faq-sec__ans2">
+        <div class="faq-sec__ans2-text">
+          <p class="faq-sec__quest2">
+            How to setup new device
+            <span> <img src="./images/icons/down.png" alt="down" /> </span>
+          </p>
+        </div>
+      </div>
+
+      <!-- 3 -->
+
+      <div class="faq-sec__ans2">
+        <div class="faq-sec__ans2-text">
+          <p class="faq-sec__quest2">
+            Privacy Policy
+            <span> <img src="./images/icons/down.png" alt="down" /> </span>
+          </p>
+        </div>
+      </div>
+
+      <!-- 4 -->
+
+      <div class="faq-sec__ans2">
+        <div class="faq-sec__ans2-text">
+          <p class="faq-sec__quest2">
+            Warrantee Case
+            <span> <img src="./images/icons/down.png" alt="down" /> </span>
+          </p>
+        </div>
+      </div>
+
+      <!-- 5 -->
+
+      <div class="faq-sec__ans2">
+        <div class="faq-sec__ans2-text">
+          <p class="faq-sec__quest2">
+            Product guide
+            <span> <img src="./images/icons/down.png" alt="down" /> </span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ SECTION END -->
+
+    <!-- FOOTER SECTION START -->
+    <div class="footer-sec">
+      <!-- ---contact--- -->
+      <div class="footer-sec__contact">
+        <div class="footer-sec__contact-logo">
+          <img src="./images/logo-white.webp" alt="logo" />
+          <div class="footer-sec__contact-logo-text">
+            <h6>One</h6>
+            <p>Single product shopify theme</p>
+          </div>
+        </div>
+        <div class="footer-sec__contact-info">
+          <img src="./images/icons/call.png" alt="phone" />
+          <p class="footer-sec__contact-text">Call Us Now :</p>
+
+          <p class="footer-sec__contact-link">0123 456 789</p>
+        </div>
+
+        <div class="footer-sec__contact-info">
+          <img src="./images/icons/email.png" alt="phone" />
+
+          <p class="footer-sec__contact-link">demo@gmail.com</p>
+        </div>
+
+        <div class="footer-sec__contact-info">
+          <img src="./images/icons/pin.png" alt="phone" />
+          <p class="footer-sec__contact-text">Monday till Friday 10 to 6 EST</p>
+        </div>
+      </div>
+
+      <!-- ---about--- -->
+      <div class="footer-sec__about">
+        <h4>About</h4>
+
+        <div class="footer-about__a">
+          <a href="#">About</a>
+          <a href="#">Blog</a>
+          <a href="#">Partner</a>
+          <a href="#">Delivery and payment</a>
+          <a href="#">Terms of Sale</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+
+      <!-- ---social--- -->
+
+      <div class="footer-sec__social">
+        <h4>Socials</h4>
+
+        <div class="footer-social__a">
+          <a href="#">
+            <span><img src="./images/icons/facebook.png" alt="fb" /></span>
+            Facebook</a
+          >
+          <a href="#">
+            <span><img src="./images/icons/instagram.png" alt="fb" /></span>
+
+            Instagram</a
+          >
+          <a href="#">
+            <span><img src="./images/icons/pinterest.png" alt="fb" /></span>
+            Pinterest</a
+          >
+          <a href="#">
+            <span><img src="./images/icons/twitter.png" alt="fb" /></span>
+            Twitter</a
+          >
+          <a href="#">
+            <span><img src="./images/icons/tiktok.png" alt="fb" /></span>
+            Tiktok</a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- FOOTER SECTION END -->
+
+    <!--LOWER FOOTER START -->
+    <div class="lower-footer">
+      <p>Copyright © 2024 Vinovathemes. All rights reserved.</p>
+      <div class="lower-footer__cards">
+        <img src="./images/icons/american-express.png" alt="american-express" />
+        <img src="./images/icons/master.png" alt="master" />
+        <img src="./images/icons/apple-pay.png" alt="apple-pay" />
+        <img src="./images/icons/master.png" alt="master" />
+        <img src="./images/icons/visa.png" alt="visa" />
+        <img src="./images/icons/master.png" alt="master" />
+      </div>
+    </div>
+    <!--LOWER FOOTER END -->
+  </body>
+</html>
+
+<!-- <img class="hero-section__img" 
+ src="images/image_1.webp" alt="Cover Photo" /> -->

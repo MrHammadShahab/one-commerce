@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/landing.css" />
+    <link rel="stylesheet" href="./css/collection.css" />
+    <link rel="stylesheet" href="./css/about.css" />
+    <link rel="stylesheet" href="./css/blog.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+      /* ANIMATION START */
+
+      @keyframes appear {
+        from {
+          opacity: 0;
+          scale: 0.5;
+        }
+        to {
+          opacity: 1;
+          scale: 1;
+        }
+      }
+
+      .hero-sec,
+      .about-sec__desc img {
+        animation: appear 0.3s linear;
+      }
+
+      .about-sec__desc p,
+      .about-quote-sec,
+      .about-sec__list-item {
+        animation: appear linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
+      }
+
+      /* ANIMATION END */
+    </style>
+
+    <title>BLOGS</title>
+  </head>
+
+  <body>
+    <!-- HEADER START  -->
+
+    <div class="header">
+      <div>
+        <a href="./">
+          <span
+            ><img
+              class="header__logo"
+              src="./images/logo.avif"
+              alt="logo"
+            /> </span
+        ></a>
+      </div>
+
+      <div class="header__menus">
+        <a href="/">Home</a>
+        <a href="/collection.html">Collections</a>
+        <a href="/product.html">Products</a>
+        <a href="/about.html">About Us</a>
+        <a href="/blog.html">Blogs</a>
+      </div>
+
+      <div class="header__icons">
+        <img
+          class="header__search"
+          src="./images/icons/search.png"
+          alt="search icon"
+        />
+        <img
+          class="header__likes"
+          src="./images/icons/heart.png"
+          alt="likes icon"
+        />
+        <img
+          class="header__cart"
+          src="./images/icons/cart.png"
+          alt="cart icon"
+        />
+        <img
+          class="header__settings"
+          src="./images/icons/settings.png"
+          alt="settings icon"
+        />
+      </div>
+      <img
+        class="header__menu-icon"
+        src="./images/icons/app-drawer.png"
+        alt="menu-icon"
+      />
+    </div>
+
+    <!-- HEADER END  -->
+
+    <!-- HERO SEC START -->
+
+    <div class="hero-sec about-sec">
+      <h2>BLOGS</h2>
+      <p>
+        <span><a href="/">Home</a></span
+        >• Blogs
+      </p>
+    </div>
+
+    <!-- HERO SEC END -->
+
+    <div class="blog-sec">
+      <!-- LEFT BLOG SECTION -->
+
+      <div class="blog-sec__left">
+        <!-- LEFT CATEGORIES -->
+        <div class="blog-sec__left__categories">
+          <div class="left__categories-heading">
+            <img src="./images/icons/category.png" alt="category.png" />
+            <h4>Categories</h4>
+          </div>
+          <div class="left__categories-list">
+            <li><a href=""> </a>Accessories</li>
+            <li><a href=""> </a>Computer</li>
+            <li><a href=""> </a>Electronics</li>
+            <li><a href=""> </a>Security Devices</li>
+            <li><a href=""> </a>Battery Charger</li>
+          </div>
+        </div>
+
+        <!-- LEFT SEARCH -->
+
+        <div class="left-search">
+          <input type="text" placeholder="SEARCH" />
+        </div>
+
+        <!-- LEFT RECENT -->
+
+        <div class="left-recent">
+          <div class="recent-heading">
+            <h4>RECENT POST</h4>
+          </div>
+          <div class="recent-post__list">
+            <div class="recent-post__list-img">
+              <img src="./images/img-1-3.webp" alt="recent1.png" />
+            </div>
+            <div class="recent-post__list-text">
+              <p class="recent-date">
+                <span>
+                  <img src="./images/icons/time2.png" alt="calendar.png" />
+                </span>
+                DEC 26, 2024
+              </p>
+              <a href="#">Lorem ipsum dolor sit amet consectetuer</a>
+            </div>
+          </div>
+
+          <div class="recent-post__list">
+            <div class="recent-post__list-img">
+              <img src="./images/img-1-3.webp" alt="recent1.png" />
+            </div>
+            <div class="recent-post__list-text">
+              <p class="recent-date">
+                <span>
+                  <img src="./images/icons/time2.png" alt="calendar.png" />
+                </span>
+                DEC 26, 2024
+              </p>
+              <a href="#">Lorem ipsum dolor sit amet consectetuer</a>
+            </div>
+          </div>
+
+          <div class="recent-post__list">
+            <div class="recent-post__list-img">
+              <img src="./images/img-1-3.webp" alt="recent1.png" />
+            </div>
+            <div class="recent-post__list-text">
+              <p class="recent-date">
+                <span>
+                  <img src="./images/icons/time2.png" alt="calendar.png" />
+                </span>
+                DEC 26, 2024
+              </p>
+              <a href="#">Lorem ipsum dolor sit amet consectetuer</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ------------- -->
+      </div>
+
+      <!-- RIGHT BLOG SECTION -->
+      <div class="blog-sec__right">
+        <!-- -------------image 1 ------------- -->
+
+        <div class="blog-sec__article">
+          <div class="right__img">
+            <img src="./images/blog-img-1.webp" alt="image-1" />
+          </div>
+          <div class="right__img-desc">
+            <h4>Lorem ipsum dolor sit amet consectetuer</h4>
+            <div class="right__img-details">
+              <!-- date -->
+
+              <div class="img-details-date">
+                <img src="./images/icons/time2.png" alt="date.png" />
+                <p>April 12, 2023</p>
+              </div>
+
+              <!-- author -->
+
+              <div class="img-details-author">
+                <img src="./images/icons/time.png" alt="date.png" />
+                <p>Vinova Theme</p>
+              </div>
+
+              <!-- comments -->
+
+              <div class="img-details-comments">
+                <img src="./images/icons/cart.png" alt="date.png" />
+                <p>2 Comments</p>
+              </div>
+            </div>
+            <p>
+              Valentine’s Day 2021 has no choice but to unfold rather
+              differently than usual, so we already know it will be one to
+              remember. Lorem ipsum dolor sit amet, consectetur adipisicing
+              elit, do eiusmod tempor incididunt ut labore et dolore magna
+              aliqua. Ut enim adminim veniam libero lobortis in dictum velit
+              luctus. Donec imperdiet tincidunt interdum. ...
+            </p>
+            <button class="img-details-btn">Read More</button>
+          </div>
+        </div>
+
+        <!-- -------------image 2 ------------- -->
+
+        <div class="blog-sec__article">
+          <div class="right__img">
+            <img src="./images/blog-img-1.webp" alt="image-1" />
+          </div>
+          <div class="right__img-desc">
+            <h4>Lorem ipsum dolor sit amet consectetuer</h4>
+            <div class="right__img-details">
+              <!-- date -->
+
+              <div class="img-details-date">
+                <img src="./images/icons/time2.png" alt="date.png" />
+                <p>April 12, 2023</p>
+              </div>
+
+              <!-- author -->
+
+              <div class="img-details-author">
+                <img src="./images/icons/time.png" alt="date.png" />
+                <p>Vinova Theme</p>
+              </div>
+
+              <!-- comments -->
+
+              <div class="img-details-comments">
+                <img src="./images/icons/cart.png" alt="date.png" />
+                <p>2 Comments</p>
+              </div>
+            </div>
+            <p>
+              Valentine’s Day 2021 has no choice but to unfold rather
+              differently than usual, so we already know it will be one to
+              remember. Lorem ipsum dolor sit amet, consectetur adipisicing
+              elit, do eiusmod tempor incididunt ut labore et dolore magna
+              aliqua. Ut enim adminim veniam libero lobortis in dictum velit
+              luctus. Donec imperdiet tincidunt interdum. ...
+            </p>
+            <button class="img-details-btn">Read More</button>
+          </div>
+        </div>
+
+        <!-- -------------image 3 ------------- -->
+
+        <div class="blog-sec__article">
+          <div class="right__img">
+            <img src="./images/blog-img-1.webp" alt="image-1" />
+          </div>
+          <div class="right__img-desc">
+            <h4>Lorem ipsum dolor sit amet consectetuer</h4>
+            <div class="right__img-details">
+              <!-- date -->
+
+              <div class="img-details-date">
+                <img src="./images/icons/time2.png" alt="date.png" />
+                <p>April 12, 2023</p>
+              </div>
+
+              <!-- author -->
+
+              <div class="img-details-author">
+                <img src="./images/icons/time.png" alt="date.png" />
+                <p>Vinova Theme</p>
+              </div>
+
+              <!-- comments -->
+
+              <div class="img-details-comments">
+                <img src="./images/icons/cart.png" alt="date.png" />
+                <p>2 Comments</p>
+              </div>
+            </div>
+            <p>
+              Valentine’s Day 2021 has no choice but to unfold rather
+              differently than usual, so we already know it will be one to
+              remember. Lorem ipsum dolor sit amet, consectetur adipisicing
+              elit, do eiusmod tempor incididunt ut labore et dolore magna
+              aliqua. Ut enim adminim veniam libero lobortis in dictum velit
+              luctus. Donec imperdiet tincidunt interdum. ...
+            </p>
+            <button class="img-details-btn">Read More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------- -->
+    <!-- ------------- -->
+    <!-- ------------- -->
+    <!-- ------------- -->
+    <!-- ------------- -->
+    <!-- ------------- -->
+
+    <!-- ------------- -->
+    <!-- ------------- -->
+    <!-- ------------- -->
+    <!-- ------------- -->
+    <!-- ------------- -->
+    <!-- ------------- -->
+    <!-- ------------- -->
+
+    <!-- FOOTER SECTION START -->
+    <div class="footer-sec">
+      <!-- ---contact--- -->
+      <div class="footer-sec__contact">
+        <div class="footer-sec__contact-logo">
+          <img src="./images/logo-white.webp" alt="logo" />
+          <div class="footer-sec__contact-logo-text">
+            <h6>One</h6>
+            <p>Single product shopify theme</p>
+          </div>
+        </div>
+        <div class="footer-sec__contact-info">
+          <img src="./images/icons/call.png" alt="phone" />
+          <p class="footer-sec__contact-text">Call Us Now :</p>
+
+          <p class="footer-sec__contact-link">0123 456 789</p>
+        </div>
+
+        <div class="footer-sec__contact-info">
+          <img src="./images/icons/email.png" alt="phone" />
+
+          <p class="footer-sec__contact-link">demo@gmail.com</p>
+        </div>
+
+        <div class="footer-sec__contact-info">
+          <img src="./images/icons/pin.png" alt="phone" />
+          <p class="footer-sec__contact-text">Monday till Friday 10 to 6 EST</p>
+        </div>
+      </div>
+
+      <!-- ---about--- -->
+      <div class="footer-sec__about">
+        <h4>About</h4>
+
+        <div class="footer-about__a">
+          <a href="#">About</a>
+          <a href="#">Blog</a>
+          <a href="#">Partner</a>
+          <a href="#">Delivery and payment</a>
+          <a href="#">Terms of Sale</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+
+      <!-- ---social--- -->
+
+      <div class="footer-sec__social">
+        <h4>Socials</h4>
+
+        <div class="footer-social__a">
+          <a href="#">
+            <span><img src="./images/icons/facebook.png" alt="fb" /></span>
+            Facebook</a
+          >
+          <a href="#">
+            <span><img src="./images/icons/instagram.png" alt="fb" /></span>
+
+            Instagram</a
+          >
+          <a href="#">
+            <span><img src="./images/icons/pinterest.png" alt="fb" /></span>
+            Pinterest</a
+          >
+          <a href="#">
+            <span><img src="./images/icons/twitter.png" alt="fb" /></span>
+            Twitter</a
+          >
+          <a href="#">
+            <span><img src="./images/icons/tiktok.png" alt="fb" /></span>
+            Tiktok</a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- FOOTER SECTION END -->
+
+    <!--LOWER FOOTER START -->
+    <div class="lower-footer">
+      <p>Copyright © 2024 Vinovathemes. All rights reserved.</p>
+      <div class="lower-footer__cards">
+        <img src="./images/icons/american-express.png" alt="american-express" />
+        <img src="./images/icons/master.png" alt="master" />
+        <img src="./images/icons/apple-pay.png" alt="apple-pay" />
+        <img src="./images/icons/master.png" alt="master" />
+        <img src="./images/icons/visa.png" alt="visa" />
+        <img src="./images/icons/master.png" alt="master" />
+      </div>
+    </div>
+    <!--LOWER FOOTER END -->
+  </body>
+</html>
+
+<!-- <img class="hero-section__img" 
+ src="images/image_1.webp" alt="Cover Photo" /> -->

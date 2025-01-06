@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/landing.css" />
+    <link rel="stylesheet" href="./css/collection.css" />
+    <link rel="stylesheet" href="./css/about.css" />
+    <link rel="stylesheet" href="./css/blog.css" />
+    <link rel="stylesheet" href="./css/product.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+      /* ANIMATION START */
+
+      @keyframes appear {
+        from {
+          opacity: 0;
+          scale: 0.5;
+        }
+        to {
+          opacity: 1;
+          scale: 1;
+        }
+      }
+
+      .prod-hero-sec p {
+        animation: appear 0.3s linear;
+      }
+
+      .prod-sec {
+        animation: appear 0.3s linear;
+      }
+
+      .prod-hero-sec,
+      .benefit-sec,
+      .explore-sec,
+      .explore-sec__list-item {
+        animation: appear linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
+      }
+
+      /* ANIMATION END */
+    </style>
+
+    <title>PRODUCTS</title>
+  </head>
+
+  <body>
+    <!-- HEADER START  -->
+
+    <div class="header">
+      <div>
+        <a href="./">
+          <span
+            ><img
+              class="header__logo"
+              src="./images/logo.avif"
+              alt="logo"
+            /> </span
+        ></a>
+      </div>
+
+      <div class="header__menus">
+        <a href="/">Home</a>
+        <a href="/collection.html">Collections</a>
+        <a href="/product.html">Products</a>
+        <a href="/about.html">About Us</a>
+        <a href="/blog.html">Blogs</a>
+      </div>
+
+      <div class="header__icons">
+        <img
+          class="header__search"
+          src="./images/icons/search.png"
+          alt="search icon"
+        />
+        <img
+          class="header__likes"
+          src="./images/icons/heart.png"
+          alt="likes icon"
+        />
+        <img
+          class="header__cart"
+          src="./images/icons/cart.png"
+          alt="cart icon"
+        />
+        <img
+          class="header__settings"
+          src="./images/icons/settings.png"
+          alt="settings icon"
+        />
+      </div>
+      <img
+        class="header__menu-icon"
+        src="./images/icons/app-drawer.png"
+        alt="menu-icon"
+      />
+    </div>
+
+    <!-- HEADER END  -->
+
+    <!-- ORDER PREVIEW START -->
+
+    <div class="prod-hero-sec">
+      <p>
+        <span><a href="/">Home</a></span
+        >• Realme Buds Q2s Bluetooth
+      </p>
+    </div>
+    <div class="prod-sec">
+      <div class="prod-sec__img">
+        <img
+          class="prod-sec__img-main"
+          src="./images/product-1.webp"
+          alt="prodiew image"
+        />
+        <div class="prod-sec__img-thumbnail">
+          <img src="./images/product-1.webp" alt="preview-img" />
+          <img src="./images/product-2.webp" alt="preview-img" />
+          <img src="./images/product-3.avif" alt="preview-img" />
+          <img src="./images/product-4.avif" alt="preview-img" />
+          <img src="./images/product-5.avif" alt="preview-img" />
+        </div>
+      </div>
+
+      <div class="prod-sec__text">
+        <h1>Realme Buds Q2s Bluetooth</h1>
+        <a href="./product.html">
+          <span><img src="./images/icons/heart.png" alt="" /></span>
+          <span><img src="./images/icons/heart.png" alt="" /></span>
+          <span><img src="./images/icons/heart.png" alt="" /></span>
+          <span><img src="./images/icons/heart.png" alt="" /></span>
+          <span><img src="./images/icons/heart.png" alt="" /></span>
+          <span><p>View all reviews</p></span>
+        </a>
+        <h3>$125.00</h3>
+        <p class="prod-sec__desc">
+          Captivate with this shirt’s versatile urban look that works as well at
+          happy hour as it does in the back yard. The real mother of pearl
+          buttons and embroidered crocodile complete its elegant appeal.Lorem
+          ipsum...
+        </p>
+
+        <div class="prod-sec__details">
+          <div class="details__sec">
+            <div class="details__heading">
+              <h4>TAGS</h4>
+            </div>
+            <div class="details__tags">
+              <a href="">Bass</a>
+              <a href="">Bluetooth</a>
+              <a href="">Power</a>
+              <a href="">Treble</a>
+            </div>
+          </div>
+
+          <div class="details__sec">
+            <div class="details__heading">
+              <h4>SKU</h4>
+            </div>
+            <div class="details__tags">
+              <a href="">e-125</a>
+            </div>
+          </div>
+
+          <div class="details__sec">
+            <div class="details__heading">
+              <h4>CATEGORY</h4>
+            </div>
+            <div class="details__tags">
+              <a href="">Galazy lamp</a>
+              <a href="">Game deivce</a>
+              <a href="">Laptops</a>
+              <a href="">Smart watch</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="prod__thumbnail">
+          <p class="prod-sec__title">Color: Palegreen</p>
+          <div class="prod__thumbnail-img">
+            <img src="./images/prod-thumbnail-1.webp" alt="product-1" />
+            <img src="./images/prod-thumbnail-2.webp" alt="product-2" />
+            <img src="./images/prod-thumbnail-3.webp" alt="product-3" />
+          </div>
+        </div>
+
+        <p class="prod-sec__title">Quantity:</p>
+        <div class="prod-sec__wish-list">
+          <div class="prod-quantity--btn">
+            <button>-</button>
+            <p>1</p>
+            <button>+</button>
+          </div>
+
+          <button class="cart__btn">Add to Cart</button>
+
+          <button class="wish__btn">
+            <span><img src="./images/icons/heart.png" alt="heart" /></span>
+          </button>
+        </div>
+        <!-- <button class="cart__btn">
+          <span><img src="./images/icons/cart1.png" alt="cart-icon" /></span>
+          Add to Cart
+        </button> -->
+        <button class="prod__btn">Buy it Now</button>
+
+        <p class="prod-sec__notes">
+          <span><img src="./images/icons/time.png" alt="time.png" /></span>
+          Orders ship within 5 to 10 business days.
+        </p>
+        <p class="prod-sec__notes">
+          <span><img src="./images/icons/shipment.png" alt="order.png" /></span>
+          Hooray ! This item ships free to the US
+        </p>
+      </div>
+    </div>
+
+    <!-- ORDER PREVIEW END -->
+
+    <!-- BENEFITS SECTION START -->
+    <div class="benefit-sec">
+      <div class="benefit-sec__item">
+        <div class="benefit-sec__item-left">
+          <div class="benefit-sec__circle">
+            <img src="./images/icons/shipment2.webp" alt="shipment" />
+          </div>
+        </div>
+        <div class="benefit-sec__text">
+          <h4>FREE US DELIVERY</h4>
+          <p>Free shipping on all order above $200</p>
+        </div>
+      </div>
+
+      <div class="benefit-sec__item">
+        <div class="benefit-sec__item-left">
+          <div class="benefit-sec__circle">
+            <img src="./images/icons/quality.webp" alt="shipment" />
+          </div>
+        </div>
+        <div class="benefit-sec__text">
+          <h4>FREE US DELIVERY</h4>
+          <p>Free shipping on all order above $200</p>
+        </div>
+      </div>
+
+      <div class="benefit-sec__item">
+        <div class="benefit-sec__item-left">
+          <div class="benefit-sec__circle">
+            <img src="./images/icons/shield2.webp" alt="shipment" />
+          </div>
+        </div>
+        <div class="benefit-sec__text">
+          <h4>FREE US DELIVERY</h4>
+          <p>Free shipping on all order above $200</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- BENEFITS SECTION END -->
+
+    <!-- EXPLORE SECTION START -->
+    <div class="explore-sec recent-sec">
+      <h2>Recently Viewed</h2>
+      <div class="explore-sec__list">
+        <!-- ---1--- -->
+        <div class="explore-sec__list-item">
+          <img
+            class="explore-sec__list-img"
+            src="./images/explore-img-1.webp"
+            alt="explore1.pmg"
+          />
+          <p class="explore-sec__list-text">
+            10000 mAh Power Bank with Wireless Charging and Integrated Cables
+          </p>
+          <img
+            class="explore-sec__list-star"
+            src="./images/icons/heart.png"
+            alt="star.png"
+          />
+          <p class="explore-sec__list-price">$20.00</p>
+        </div>
+
+        <!-- ---2--- -->
+
+        <div class="explore-sec__list-item">
+          <img
+            class="explore-sec__list-img"
+            src="./images/recent-img-1.webp"
+            alt="explore1.pmg"
+          />
+          <p class="explore-sec__list-text">
+            10000 mAh Power Bank with Wireless Charging and Integrated Cables
+          </p>
+          <img
+            class="explore-sec__list-star"
+            src="./images/icons/heart.png"
+            alt="star.png"
+          />
+          <p class="explore-sec__list-price">$20.00</p>
+        </div>
+      </div>
+    </div>
+    <!-- EXPLORE SECTION END -->
+
+    <!-- ------------- -->
+
+    <!-- FOOTER SECTION START -->
+    <div class="footer-sec">
+      <!-- ---contact--- -->
+      <div class="footer-sec__contact">
+        <div class="footer-sec__contact-logo">
+          <img src="./images/logo-white.webp" alt="logo" />
+          <div class="footer-sec__contact-logo-text">
+            <h6>One</h6>
+            <p>Single product shopify theme</p>
+          </div>
+        </div>
+        <div class="footer-sec__contact-info">
+          <img src="./images/icons/call.png" alt="phone" />
+          <p class="footer-sec__contact-text">Call Us Now :</p>
+
+          <p class="footer-sec__contact-link">0123 456 789</p>
+        </div>
+
+        <div class="footer-sec__contact-info">
+          <img src="./images/icons/email.png" alt="phone" />
+
+          <p class="footer-sec__contact-link">demo@gmail.com</p>
+        </div>
+
+        <div class="footer-sec__contact-info">
+          <img src="./images/icons/pin.png" alt="phone" />
+          <p class="footer-sec__contact-text">Monday till Friday 10 to 6 EST</p>
+        </div>
+      </div>
+
+      <!-- ---about--- -->
+      <div class="footer-sec__about">
+        <h4>About</h4>
+
+        <div class="footer-about__a">
+          <a href="#">About</a>
+          <a href="#">Blog</a>
+          <a href="#">Partner</a>
+          <a href="#">Delivery and payment</a>
+          <a href="#">Terms of Sale</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+
+      <!-- ---social--- -->
+
+      <div class="footer-sec__social">
+        <h4>Socials</h4>
+
+        <div class="footer-social__a">
+          <a href="#">
+            <span><img src="./images/icons/facebook.png" alt="fb" /></span>
+            Facebook</a
+          >
+          <a href="#">
+            <span><img src="./images/icons/instagram.png" alt="fb" /></span>
+
+            Instagram</a
+          >
+          <a href="#">
+            <span><img src="./images/icons/pinterest.png" alt="fb" /></span>
+            Pinterest</a
+          >
+          <a href="#">
+            <span><img src="./images/icons/twitter.png" alt="fb" /></span>
+            Twitter</a
+          >
+          <a href="#">
+            <span><img src="./images/icons/tiktok.png" alt="fb" /></span>
+            Tiktok</a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- FOOTER SECTION END -->
+
+    <!--LOWER FOOTER START -->
+    <div class="lower-footer">
+      <p>Copyright © 2024 Vinovathemes. All rights reserved.</p>
+      <div class="lower-footer__cards">
+        <img src="./images/icons/american-express.png" alt="american-express" />
+        <img src="./images/icons/master.png" alt="master" />
+        <img src="./images/icons/apple-pay.png" alt="apple-pay" />
+        <img src="./images/icons/master.png" alt="master" />
+        <img src="./images/icons/visa.png" alt="visa" />
+        <img src="./images/icons/master.png" alt="master" />
+      </div>
+    </div>
+    <!--LOWER FOOTER END -->
+  </body>
+</html>
+
+<!-- <img class="hero-section__img" 
+ src="images/image_1.webp" alt="Cover Photo" /> -->

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/landing.css" />
+    <link rel="stylesheet" href="./css/collection.css" />
+    <link rel="stylesheet" href="./css/about.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+      /* ANIMATION START */
+
+      @keyframes appear {
+        from {
+          opacity: 0;
+          scale: 0.5;
+        }
+        to {
+          opacity: 1;
+          scale: 1;
+        }
+      }
+
+      .hero-sec,
+      .about-sec__desc img {
+        animation: appear 0.3s linear;
+      }
+
+      .about-sec__desc p,
+      .about-quote-sec,
+      .about-sec__list-item {
+        animation: appear linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
+      }
+
+      /* ANIMATION END */
+    </style>
+
+    <title>ABOUT US</title>
+  </head>
+
+  <body>
+    <!-- HEADER START  -->
+
+    <div class="header">
+      <div>
+        <a href="./">
+          <span
+            ><img
+              class="header__logo"
+              src="./images/logo.avif"
+              alt="logo"
+            /> </span
+        ></a>
+      </div>
+
+      <div class="header__menus">
+        <a href="/">Home</a>
+        <a href="/collection.html">Collections</a>
+        <a href="/product.html">Products</a>
+        <a href="/about.html">About Us</a>
+        <a href="/blog.html">Blogs</a>
+      </div>
+
+      <div class="header__icons">
+        <img
+          class="header__search"
+          src="./images/icons/search.png"
+          alt="search icon"
+        />
+        <img
+          class="header__likes"
+          src="./images/icons/heart.png"
+          alt="likes icon"
+        />
+        <img
+          class="header__cart"
+          src="./images/icons/cart.png"
+          alt="cart icon"
+        />
+        <img
+          class="header__settings"
+          src="./images/icons/settings.png"
+          alt="settings icon"
+        />
+      </div>
+      <img
+        class="header__menu-icon"
+        src="./images/icons/app-drawer.png"
+        alt="menu-icon"
+      />
+    </div>
+
+    <!-- HEADER END  -->
+
+    <!-- HERO SEC START -->
+
+    <div class="hero-sec about-sec">
+      <h2>ABOUT US</h2>
+      <p>
+        <span><a href="/">Home</a></span
+        >• About Us
+      </p>
+    </div>
+
+    <!-- HERO SEC END -->
+
+    <!-- ABOUT SEC DESCRIPTION START -->
+
+    <div class="about-sec__desc">
+      <img src="./images/about-img.webp" alt="img.png" />
+      <p class="para-bold">
+        Lorem ipsum dolor sit am et, consectetur adipiscing elit. Etiam
+        consequat ut ex vel finibus. Nunc eget molestie purus. Fusce imperdiet
+        pulvinar est, eget fermentum nisi. Vestibulum ante ipsum primis in
+        faucibus orci luctus et ultrices posuere cubilia curae
+      </p>
+      <p>
+        Maecenas congue metus id turpis iaculis mattis. Sed pellentesque id arcu
+        id scelerisque. Ut ullamcorper rutrum justo, at blandit eros maximus ut.
+        Integer non tincidunt justo, rhoncus Aenean venenatis sed purus ac
+        sollicitudin. Nulla mauris risus, commodo et luctus rutrum, lobortis sed
+        mauris. Integer congue, sem elementum varius tristique, erat nulla
+        rutrum risus, a imperdiet nulla lorem fermentum erat. Pellentesque
+        elementum justo at velit fringilla, eu feugiat erat fermentum. Vivamus
+        libero dolor, porta eget vehicula eu, iaculis id lacus. Sed interdum
+        convallis sapien, eget faucibus sapien. Proin hendrerit lacus turpis.
+      </p>
+      <p>
+        Maecenas congue metus id turpis iaculis mattis. Sed pellentesque id arcu
+        id scelerisque. Ut ullamcorper rutrum justo, at blandit eros maximus ut.
+        Integer non tincidunt justo, rhoncus Aenean venenatis sed purus ac
+        sollicitudin. Nulla mauris risus, commodo et luctus rutrum, lobortis sed
+        mauris.
+      </p>
+    </div>
+
+    <!-- ABOUT SEC DESCRIPTION END -->
+
+    <!-- ABOUT QUOTE START -->
+    <div class="about-quote-sec">
+      <div class="about-quote-sec__img">
+        <img src="./images/quote-woman.avif" alt="" />
+      </div>
+      <div class="about-quote-sec__text">
+        <img src="./images/icons/icon-quote.webp" alt="quotation-mark" />
+        <div class="about-quote-sec__para">
+          <p class="quote-para">
+            Best purchase I’ve made this winter! The color and knitting are
+            exquisite and it's so comfy! Went from NYC to Miami without ever
+            taking it off. Super cute!!
+          </p>
+          <p class="quote-name">Kwang Shang. - CEO Vinovathemes</p>
+        </div>
+      </div>
+    </div>
+    <!-- ABOUT QUOTE END -->
+
+    <!-- ABOUT LIST START -->
+    <div class="about-sec__list">
+      <div class="about-sec__list-item border-bottom">
+        <div class="about-sec__list-item-text">
+          <h4>Why choose us ?</h4>
+          <p>
+            Maecenas congue metus id turpis iaculis mattis. Sed pellentesque id
+            arcu id scelerisque. Ut ullamcorper rutrum justo, at blandit eros
+            maximus ut. Integer non tincidunt justo, rhoncus Aenean venenatis
+            sed purus ac sollicitudin. Nulla mauris risus, commodo et luctus
+            rutrum, lobortis sed mauris. Integer congue, sem elementum varius
+            tristique.
+          </p>
+        </div>
+        <div class="about-sec__list-item-img">
+          <img src="./images/gifs/about-1.webp" alt="" />
+        </div>
+      </div>
+
+      <div class="about-sec__list-item">
+        <div class="about-sec__list-item-img">
+          <img src="./images/gifs/about-2.gif" alt="" />
+        </div>
+
+        <div class="about-sec__list-item-text">
+          <h4>Why choose us ?</h4>
+          <p>
+            Maecenas congue metus id turpis iaculis mattis. Sed pellentesque id
+            arcu id scelerisque. Ut ullamcorper rutrum justo, at blandit eros
+            maximus ut. Integer non tincidunt justo, rhoncus Aenean venenatis
+            sed purus ac sollicitudin. Nulla mauris risus, commodo et luctus
+            rutrum, lobortis sed mauris. Integer congue, sem elementum varius
+            tristique.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- ABOUT LIST END -->
+
+    <!-- FOOTER SECTION START -->
+    <div class="footer-sec">
+      <!-- ---contact--- -->
+      <div class="footer-sec__contact">
+        <div class="footer-sec__contact-logo">
+          <img src="./images/logo-white.webp" alt="logo" />
+          <div class="footer-sec__contact-logo-text">
+            <h6>One</h6>
+            <p>Single product shopify theme</p>
+          </div>
+        </div>
+        <div class="footer-sec__contact-info">
+          <img src="./images/icons/call.png" alt="phone" />
+          <p class="footer-sec__contact-text">Call Us Now :</p>
+
+          <p class="footer-sec__contact-link">0123 456 789</p>
+        </div>
+
+        <div class="footer-sec__contact-info">
+          <img src="./images/icons/email.png" alt="phone" />
+
+          <p class="footer-sec__contact-link">demo@gmail.com</p>
+        </div>
+
+        <div class="footer-sec__contact-info">
+          <img src="./images/icons/pin.png" alt="phone" />
+          <p class="footer-sec__contact-text">Monday till Friday 10 to 6 EST</p>
+        </div>
+      </div>
+
+      <!-- ---about--- -->
+      <div class="footer-sec__about">
+        <h4>About</h4>
+
+        <div class="footer-about__a">
+          <a href="#">About</a>
+          <a href="#">Blog</a>
+          <a href="#">Partner</a>
+          <a href="#">Delivery and payment</a>
+          <a href="#">Terms of Sale</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+
+      <!-- ---social--- -->
+
+      <div class="footer-sec__social">
+        <h4>Socials</h4>
+
+        <div class="footer-social__a">
+          <a href="#">
+            <span><img src="./images/icons/facebook.png" alt="fb" /></span>
+            Facebook</a
+          >
+          <a href="#">
+            <span><img src="./images/icons/instagram.png" alt="fb" /></span>
+
+            Instagram</a
+          >
+          <a href="#">
+            <span><img src="./images/icons/pinterest.png" alt="fb" /></span>
+            Pinterest</a
+          >
+          <a href="#">
+            <span><img src="./images/icons/twitter.png" alt="fb" /></span>
+            Twitter</a
+          >
+          <a href="#">
+            <span><img src="./images/icons/tiktok.png" alt="fb" /></span>
+            Tiktok</a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- FOOTER SECTION END -->
+
+    <!--LOWER FOOTER START -->
+    <div class="lower-footer">
+      <p>Copyright © 2024 Vinovathemes. All rights reserved.</p>
+      <div class="lower-footer__cards">
+        <img src="./images/icons/american-express.png" alt="american-express" />
+        <img src="./images/icons/master.png" alt="master" />
+        <img src="./images/icons/apple-pay.png" alt="apple-pay" />
+        <img src="./images/icons/master.png" alt="master" />
+        <img src="./images/icons/visa.png" alt="visa" />
+        <img src="./images/icons/master.png" alt="master" />
+      </div>
+    </div>
+    <!--LOWER FOOTER END -->
+  </body>
+</html>
